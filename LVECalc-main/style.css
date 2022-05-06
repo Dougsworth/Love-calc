@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: pink;
+  font-family: poppins;
+}
+.container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 60vw;
+  box-shadow: inset -8px -8px 12px rgb(185, 103, 117),
+    inset 8px 8px 12px rgb(113, 0, 21);
+  border-radius: 50px;
+}
+.content {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content img {
+  width: 25px;
+  margin-left: 195px;
+}
+.content h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #d7385c;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+glow {
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #ff0000, 0 0 30px #ff0000,
+      0 0 40px #e20000, 0 0 50px #9554b3, 0 0 60px #ca2d8e, 0 0 70px #9554b3;
+  }
+  to {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.inputarea {
+  display: flex;
+}
+
+.inputarea input {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin: 5px;
+  outline: none;
+  border: 2px solid #d7385c;
+  padding: 20px 40px;
+  font-size: 20px;
+}
+
+a {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #d7385c;
+  padding: 10px;
+  margin: 0px 6px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#print {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: #d7385c;
+  margin: 20px;
+  padding: 20px 50px;
+  color: #fff;
+  text-emphasis: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+
+#statement {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-transform: 20px;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 300px) {
+  .container {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    height: 370px;
+    width: 400px;
+    box-shadow: inset -8px -8px 12px rgb(185, 103, 117),
+      inset 8px 8px 12px rgb(201, 95, 114);
+    border-radius: 50px;
+  }
+
+  .content {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  a {
+    display: flex;
+    border-radius: 100px;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #d7385c;
+    padding: 10px;
+    margin: 0px 6px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
